@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-demo-rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-demo-redis/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

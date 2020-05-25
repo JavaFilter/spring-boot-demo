@@ -2,6 +2,7 @@
 /spring-boot-demo-helloworld/target/
 ### IntelliJ IDEA ###
 .idea
+*.idea
 *.iws
 *.iml
 *.ipr
