@@ -23,6 +23,7 @@
         <module>spring-boot-demo-helloworld</module>
         <module>spring-boot-demo-rabbitmq</module>
         <module>spring-boot-demo-redis</module>
+        <module>spring-boot-mybatis-plus</module>
     </modules>
 
     <dependencyManagement>
