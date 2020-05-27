@@ -8,3 +8,4 @@
 *.ipr
 *.mvn
 springboot.iml
+/git_email.sh
