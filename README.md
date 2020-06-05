@@ -12,7 +12,8 @@
  2.spring-boot-demo-rabbitmq springboot集成rabbitmq中间件  
  3.spring-boot-demo-redis springboot集成redis和一些示例代码  
  4.spring-boot-demo-mybatis-plus springboot集成mybatis-plus数据持久层  
- 5.spring-boot-demo-elasticsearch springboot集成es搜索引擎
+ 5.spring-boot-demo-elasticsearch springboot集成es搜索引擎  
+ 6.spring-boot-swagger springboot集成swagger生成接口文档
  
  结语
  这些项目是学习spring-boot时的一些记录，笔记，适合学习的小伙伴。
