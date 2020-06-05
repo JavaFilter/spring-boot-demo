@@ -25,6 +25,7 @@
         <module>spring-boot-demo-redis</module>
         <module>spring-boot-mybatis-plus</module>
         <module>spring-boot-elasticsearch</module>
+        <module>spring-boot-swagger</module>
     </modules>
 
     <dependencyManagement>
