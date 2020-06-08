@@ -32,4 +32,14 @@ public class DemoController {
         return "success";
     }
 
+    @ApiOperation(value = "获取demo",notes = "获取demo")
+    @ApiImplicitParam(name = "id",value = "ID",required = true,dataType = "String",paramType = "path")
+    public Demo getDemo(@PathVariable String id){
+        Demo demo = new Demo();
+        demo.setName("shenyu");
+        demo.setEmail("1106058183@qq.com");
+        demo.setId(id);
+        return demo;
+    }
+
 }
