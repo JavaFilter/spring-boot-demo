@@ -13,8 +13,7 @@ import java.io.Serializable;
  * @Version 1.0.0
  */
 @Data
-@ApiModel(value =
-        "demo实体")
+@ApiModel(value = "demo实体")
 public class Demo implements Serializable {
 
     @ApiModelProperty(value = "demoId")
