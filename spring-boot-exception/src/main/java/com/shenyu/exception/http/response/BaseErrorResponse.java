@@ -21,9 +21,9 @@ public class BaseErrorResponse {
     protected String message;
 
 
-//    public BaseErrorResponse(IResponseEnum responseEnum) {
-//        this(responseEnum.getCode(), responseEnum.getMessage());
-//    }
+    public BaseErrorResponse(ApiResponse responseEnum) {
+        this(responseEnum.getCode(), responseEnum.getMessage());
+    }
 
     public BaseErrorResponse(Integer code, String message) {
         this.code = code;
