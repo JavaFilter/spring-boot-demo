@@ -22,7 +22,7 @@ public class BusinessException extends RuntimeException {
     protected Object[] args;
 
     public BusinessException(ApiResponse responseEnum) {
-        super(responseEnum.getMessage());
+//        super(responseEnum.getMessage());
         this.responseEnum = responseEnum;
     }
 
