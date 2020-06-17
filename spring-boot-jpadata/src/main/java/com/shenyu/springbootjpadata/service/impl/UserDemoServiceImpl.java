@@ -6,6 +6,8 @@ import com.shenyu.springbootjpadata.service.UserDemoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 /**
  * @ClassName UserDemoServiceImpl
  * @Author shenyu
@@ -20,7 +22,8 @@ public class UserDemoServiceImpl implements UserDemoService {
 
     @Override
     public UserDemo findUserDemoById(Long id) {
-        return null;
+        Optional<UserDemo> userDemo = userDemoDao.findById(id);
+        return userDemo.get();
     }
 
     @Override
