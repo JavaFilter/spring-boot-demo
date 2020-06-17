@@ -2,6 +2,7 @@ package com.shenyu.springbootjpadata.dao;
 
 import com.shenyu.springbootjpadata.model.UserDemo;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
@@ -19,8 +20,10 @@ public interface UserDemoDao extends CrudRepository<UserDemo,Long> {
      * @param password
      * @param email
      * @param id
+     * @return int
      */
-    @Query("update UserDemo set name = ?1 , password = ?2, email = ?3 where id = ?4")
+    @Modifying
+    @Query(value = "update user_demo set name = ?1 , password = ?2, email = ?3 where id = ?4",nativeQuery = true)
     void updateUserDemo(String name,String password,String email,Long id);
 
 }

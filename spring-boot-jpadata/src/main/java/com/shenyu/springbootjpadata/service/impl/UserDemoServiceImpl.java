@@ -6,6 +6,7 @@ import com.shenyu.springbootjpadata.service.UserDemoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.Optional;
 
 /**
@@ -37,6 +38,7 @@ public class UserDemoServiceImpl implements UserDemoService {
     }
 
     @Override
+    @Transactional
     public void updateUserDemoById(UserDemo userDemo) {
         userDemoDao.updateUserDemo(userDemo.getName(),userDemo.getPassword(), userDemo.getEmail(),userDemo.getId());
     }

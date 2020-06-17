@@ -36,7 +36,10 @@ public class UserDemoController {
         return "success";
     }
 
-
-
+    @PostMapping("/updateUser")
+    public String updateUser(@RequestBody UserDemo userDemo){
+        userDemoService.updateUserDemoById(userDemo);
+        return "success";
+    }
 
 }
