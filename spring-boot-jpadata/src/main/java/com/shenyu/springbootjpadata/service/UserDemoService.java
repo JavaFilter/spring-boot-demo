@@ -23,4 +23,16 @@ public interface UserDemoService {
      */
     void createUserDemo(UserDemo userDemo);
 
+    /**
+     * 删除用户
+     * @param id
+     */
+    void deleteUserDemo(Long id);
+
+    /**
+     * 修改用户
+     * @param userDemo
+     */
+    void updateUserDemoById(UserDemo userDemo);
+
 }

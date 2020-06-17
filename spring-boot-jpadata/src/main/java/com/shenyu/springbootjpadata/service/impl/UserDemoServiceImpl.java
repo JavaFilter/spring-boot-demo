@@ -31,4 +31,14 @@ public class UserDemoServiceImpl implements UserDemoService {
         userDemoDao.save(userDemo);
     }
 
+    @Override
+    public void deleteUserDemo(Long id) {
+        userDemoDao.deleteById(id);
+    }
+
+    @Override
+    public void updateUserDemoById(UserDemo userDemo) {
+        userDemoDao.updateUserDemo(userDemo.getName(),userDemo.getPassword(), userDemo.getEmail(),userDemo.getId());
+    }
+
 }

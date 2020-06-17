@@ -30,4 +30,13 @@ public class UserDemoController {
         return userDemo;
     }
 
+    @GetMapping("/deleteUser/{id}")
+    public String deleteUser(@PathVariable("id") Long id){
+        userDemoService.deleteUserDemo(id);
+        return "success";
+    }
+
+
+
+
 }
