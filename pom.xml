@@ -27,6 +27,7 @@
         <module>spring-boot-elasticsearch</module>
         <module>spring-boot-swagger</module>
         <module>spring-boot-exception</module>
+        <module>spring-boot-jpadata</module>
     </modules>
 
     <dependencyManagement>
