@@ -16,7 +16,7 @@ public class SysUserServiceImpl implements UserService {
 		User user = new User();
 		user.setId(1L);
 		user.setUsername(username);
-		String password = new BCryptPasswordEncoder().encode("123");
+		String password = new BCryptPasswordEncoder().encode("123456");
 		user.setPassword(password);
 		return user;
 	}
