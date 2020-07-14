@@ -13,13 +13,25 @@ import org.springframework.web.bind.annotation.RestController;
  * @Version 1.0.0
  */
 @RestController
-@RequestMapping("/demo")
+@RequestMapping("/user")
 public class UserController {
 
     @PreAuthorize("hasAuthority('sys:user:view')")
     @GetMapping(value="/findAll")
     public String findAll() {
         return "ok";
+    }
+
+    @PreAuthorize("hasAuthority('sys:user:add')")
+    @PostMapping(value="/addUser")
+    public String addUser() {
+        return "ok";
+    }
+
+    @PreAuthorize("hasAuthority('sys:user:add2')")
+    @PostMapping(value="/addUser2")
+    public String addUser2() {
+        return "error";
     }
 
 }
